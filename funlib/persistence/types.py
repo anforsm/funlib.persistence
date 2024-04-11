@@ -1,9 +1,9 @@
 from dataclasses import dataclass
-
+from typing import Union
 
 @dataclass
 class Vec:
-    dtype: type | str
+    dtype: Union[type, str]
     size: int
 
 
