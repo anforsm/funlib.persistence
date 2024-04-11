@@ -4,13 +4,13 @@ from ..types import Vec
 
 import logging
 from abc import ABC, abstractmethod
-from typing import Optional
+from typing import Optional, Union
 
 
 logger = logging.getLogger(__name__)
 
 
-AttributeType = type | str | Vec
+AttributeType = Union[type, str, Vec]
 
 
 class GraphDataBase(ABC):
